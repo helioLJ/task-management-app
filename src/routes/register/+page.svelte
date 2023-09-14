@@ -1,22 +1,16 @@
 <script>
-	import SignIn from "./SignIn.svelte";
-	import TodoApp from "./TodoApp.svelte";
+	import SignUp from "./SignUp.svelte";
 
-    export let data;
 </script>
 
-{#if data.jwt}
-    <TodoApp {data} />
-{:else}
-    <div class="container">
-        <h1>SVELTE</h1>
-        <SignIn />
-        <p class="cta">Don't have an account? <a href="/register">Create here!</a></p>
-    </div>
-{/if}
+<div class="container">
+	<h1>SVELTE</h1>
+	<SignUp />
+	<p class="cta">Already have an account? <a href="/">Login here!</a></p>
+</div>
 
 <style>
-    h1 {
+	h1 {
         text-align: center;
         font-weight: bold;
         font-size: 80px;
